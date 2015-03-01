@@ -62,36 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </div>
 
-    <div class="container">
-
-      <div class="blog-header">
-        <h1 class="blog-title">FrozenNote</h1>
-        <p class="lead blog-description">leveraging the power of visualization to understand complex concepts</p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-8 blog-main">
-          {% block blog_entries %} {% endblock %}
-
-          {% if is_paginated %}
-            <ul class="pager">
-              <li {% if not page_obj.has_previous %}class="disabled"{% endif %}><a {% if page_obj.has_previous %}href="?page={{ page_obj.previous_page_number }}"{% endif %}>Prev</a></li>
-              <li {% if not page_obj.has_next %}class="disabled"{% endif %}><a {% if page_obj.has_next %}href="?page={{ page_obj.next_page_number }}"{% endif %}>Next</a></li>
-            </ul>
-    {% endif %}
-        </div><!-- /.blog-main -->
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>I'm Tejesh pursuing B.Tech computer science at VIT University.</p>
-          </div>
-        </div><!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
+    
 
     <div class="blog-footer">
       <p> Blog by <a href="https://twitter.com/tejesh95">@tejesh95</a>.</p>
